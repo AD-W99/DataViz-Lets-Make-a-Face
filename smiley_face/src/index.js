@@ -33,5 +33,7 @@ const App = () => (
   </svg>
 )
 
-const rootElement = document.getElementById('root')
-ReactDOM.render(<App />, rootElement)
+const rootElement = ReactDOM.createRoot(document.getElementById('root'))
+rootElement.render(
+  <App />
+)
